@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal Portfolio of Naman Jain - B.Tech Computer Science student at JECRC University, Jaipur. Aspiring engineer passionate about learning and building strong foundations." />
+  <meta name="keywords" content="Naman Jain, Portfolio, B.Tech, Computer Science, JECRC University, Jaipur, Aspiring Engineer" />
+  <meta name="author" content="Naman Jain" />
+  <title>Naman Jain | B.Tech Computer Science Portfolio</title>
+
+  <!-- Google Fonts: Inter & Outfit for modern, sharp typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Background Decorative Ambient Elements -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-grid" aria-hidden="true"></div>
+
+  <!-- ========================================================= -->
+  <!-- NAVIGATION BAR -->
+  <!-- ========================================================= -->
+  <header class="navbar-header" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Naman Jain Home">
+        <span class="logo-badge">NJ</span>
+        <span class="logo-text">Naman<span class="highlight">.dev</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-links" id="navLinks" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#career-goal" class="nav-link">Career Goal</a>
+        <a href="#contact" class="nav-link nav-btn-contact">Contact</a>
+      </nav>
+
+      <!-- Action Utilities: Theme Toggle & Mobile Hamburger -->
+      <div class="nav-actions">
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Dark and Light theme" title="Toggle theme">
+          <!-- Sun Icon (Light Mode) -->
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (Dark Mode) -->
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button id="mobileMenuBtn" class="mobile-menu-toggle" aria-label="Open Navigation Menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-content">
+      <nav class="drawer-links" aria-label="Mobile Navigation">
+        <a href="#home" class="drawer-link">Home</a>
+        <a href="#about" class="drawer-link">About Me</a>
+        <a href="#education" class="drawer-link">Education</a>
+        <a href="#skills" class="drawer-link">Skills</a>
+        <a href="#projects" class="drawer-link">Projects</a>
+        <a href="#certifications" class="drawer-link">Certifications & Achievements</a>
+        <a href="#career-goal" class="drawer-link">Career Goal</a>
+        <a href="#contact" class="drawer-link drawer-contact-btn">Contact Me</a>
+      </nav>
+      <div class="drawer-footer">
+        <p class="drawer-tagline">Naman Jain • B.Tech Computer Science</p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ========================================================= -->
+    <!-- 1. HOME / HERO SECTION -->
+    <!-- ========================================================= -->
+    <section id="home" class="section hero-section">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <!-- Status Pill -->
+          <div class="hero-status-pill animate-fade-in">
+            <span class="status-indicator-dot"></span>
+            <span class="status-text">B.Tech Computer Science Student • JECRC University</span>
+          </div>
+
+          <!-- Main Greeting & Name -->
+          <h1 class="hero-title animate-fade-in-up">
+            Hi, I'm <span class="gradient-text">Naman Jain</span>
+          </h1>
+
+          <!-- Role / Subheading -->
+          <h2 class="hero-subtitle animate-fade-in-up delay-1">
+            B.Tech Computer Science <span class="university-affiliation">at JECRC University, Jaipur</span>
+          </h2>
+
+          <!-- Introduction Quote / Pitch -->
+          <p class="hero-bio animate-fade-in-up delay-2">
+            "An aspiring engineer passionate about learning, growing and building a strong foundation in Computer Science."
+          </p>
+
+          <!-- Call-To-Action Buttons -->
+          <div class="hero-cta-group animate-fade-in-up delay-3">
+            <a href="#about" class="btn btn-primary">
+              <span>Learn About Me</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get In Touch</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Quick Metadata Snapshot -->
+          <div class="hero-stats-row animate-fade-in-up delay-4">
+            <div class="stat-item">
+              <span class="stat-label">Discipline</span>
+              <span class="stat-value">Computer Science</span>
+            </div>
+            <div class="stat-separator"></div>
+            <div class="stat-item">
+              <span class="stat-label">Institution</span>
+              <span class="stat-value">JECRC University</span>
+            </div>
+            <div class="stat-separator"></div>
+            <div class="stat-item">
+              <span class="stat-label">Location</span>
+              <span class="stat-value">Jaipur, India</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Profile Card -->
+        <div class="hero-visual animate-fade-in delay-2">
+          <div class="profile-card-wrapper">
+            <div class="profile-card-glow"></div>
+            <div class="profile-card">
+              <div class="profile-avatar-container">
+                <div class="avatar-ring">
+                  <div class="avatar-monogram">NJ</div>
+                </div>
+                <div class="verified-badge" title="Student Status Verified">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="profile-meta">
+                <h3 class="profile-name">Naman Jain</h3>
+                <p class="profile-role">Aspiring Software Engineer</p>
+                <div class="profile-location">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>Jaipur, Rajasthan, India</span>
+                </div>
+              </div>
+
+              <!-- Code snippet card decoration -->
+              <div class="profile-code-snippet">
+                <div class="terminal-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <pre><code><span class="token-keyword">const</span> student = {
+  <span class="token-property">name</span>: <span class="token-string">"Naman Jain"</span>,
+  <span class="token-property">focus</span>: <span class="token-string">"CS Fundamentals"</span>,
+  <span class="token-property">passion</span>: <span class="token-string">"Engineering"</span>
+};</code></pre>
+              </div>
+
+              <div class="profile-footer-tag">
+                <span class="tag-live">Portfolio v1.0</span>
+                <span class="tag-status">Undergraduate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll to About Me section">
+        <span class="mouse-icon">
+          <span class="wheel"></span>
+        </span>
+        <span class="scroll-text">Scroll Down</span>
+      </a>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 2. ABOUT ME SECTION -->
+    <!-- ========================================================= -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-tag">
+            <span class="tag-dot"></span>
+            <span>Get To Know Me</span>
+          </div>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">
+            An introduction to my background and academic journey in Computer Science.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Text Introduction Card -->
+          <div class="about-card main-intro-card">
+            <div class="card-icon-badge">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h3 class="card-title">Professional Overview</h3>
+            <div class="card-body">
+              <p>
+                Hello! I am <strong>Naman Jain</strong>, an undergraduate student pursuing my <strong>B.Tech in Computer Science</strong> at <strong>JECRC University, Jaipur</strong>.
+              </p>
+              <p>
+                As an aspiring engineer, I am dedicated to learning, growing, and building a solid theoretical and practical foundation in Computer Science. I believe that becoming a good engineer begins with a disciplined curiosity, a passion for problem-solving, and a commitment to continuous self-improvement.
+              </p>
+              <p>
+                Through my university curriculum and hands-on academic studies, I am currently exploring core computing principles, developing analytical skills, and preparing myself to tackle real-world engineering challenges.
+              </p>
+            </div>
+          </div>
+
+          <!-- Key Information Pillars -->
+          <div class="about-pillars-grid">
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+              </div>
+              <div class="pillar-content">
+                <span class="pillar-label">Current Program</span>
+                <h4 class="pillar-title">B.Tech in Computer Science</h4>
+                <p class="pillar-desc">Focused on building a strong core foundation in computer science and engineering concepts.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </div>
+              <div class="pillar-content">
+                <span class="pillar-label">University</span>
+                <h4 class="pillar-title">JECRC University</h4>
+                <p class="pillar-desc">Located in Jaipur, Rajasthan, fostering rigorous technical and academic education.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div class="pillar-content">
+                <span class="pillar-label">Primary Objective</span>
+                <h4 class="pillar-title">To Become a Good Engineer</h4>
+                <p class="pillar-desc">Driven by continuous learning, dedication, and transforming ideas into functional software.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 3. EDUCATION SECTION -->
+    <!-- ========================================================= -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-tag">
+            <span class="tag-dot"></span>
+            <span>Academic Background</span>
+          </div>
+          <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+          <p class="section-subtitle">
+            Formal academic qualifications and engineering studies.
+          </p>
+        </div>
+
+        <div class="education-timeline-wrapper">
+          <div class="education-card">
+            <div class="education-card-badge">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+
+            <div class="education-card-content">
+              <div class="edu-top-meta">
+                <span class="edu-status-badge">Currently Pursuing</span>
+                <!-- EDITABLE: You can update the academic years below when ready (e.g. 2023 - 2027) -->
+                <span class="edu-year-badge">Undergraduate Degree</span>
+              </div>
+
+              <h3 class="edu-degree">Bachelor of Technology (B.Tech)</h3>
+              <h4 class="edu-field">Computer Science</h4>
+
+              <div class="edu-institution">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                <span><strong>JECRC University</strong>, Jaipur, Rajasthan</span>
+              </div>
+
+              <p class="edu-description">
+                Enrolled in the B.Tech Computer Science program at JECRC University, Jaipur. Focusing on foundational engineering coursework, computational theory, structured problem solving, and practical lab learning.
+              </p>
+
+              <!-- Helpful Placeholder Box for Future Details (Easy to edit or unhide) -->
+              <div class="editable-placeholder-box">
+                <div class="placeholder-header">
+                  <span class="placeholder-icon">ℹ️</span>
+                  <span class="placeholder-label">Academic Details Placeholder (Easily Editable)</span>
+                </div>
+                <p class="placeholder-hint">
+                  <!-- EDITABLE: You can replace the text below with your graduation year, current semester, or CGPA -->
+                  <em>You can add your batch (e.g., 2023–2027), current semester, CGPA/percentage, or relevant coursework here as you progress.</em>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 4. SKILLS SECTION -->
+    <!-- ========================================================= -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-tag">
+            <span class="tag-dot"></span>
+            <span>Technical Capabilities</span>
+          </div>
+          <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+          <p class="section-subtitle">
+            An honest overview of my current learning stage and technical journey.
+          </p>
+        </div>
+
+        <div class="skills-highlight-container">
+          <!-- Main honest skill card according to user instruction -->
+          <div class="skill-status-card">
+            <div class="status-card-header">
+              <div class="icon-ring">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="status-badge-inline">
+                <span class="badge-pulse"></span>
+                <span>Active Learning Phase</span>
+              </div>
+            </div>
+
+            <h3 class="skill-statement-title">Currently Developing Technical Skills</h3>
+            
+            <p class="skill-statement-body">
+              "Currently developing my technical skills through my Computer Science education and practical learning."
+            </p>
+
+            <div class="learning-path-wrapper">
+              <h4 class="path-title">My Learning Roadmap & Foundations:</h4>
+              <div class="path-steps">
+                <div class="path-step-card">
+                  <div class="step-num">01</div>
+                  <div class="step-info">
+                    <h5>Computer Science Theory</h5>
+                    <p>Understanding computational principles, logic, algorithms, and core engineering fundamentals.</p>
+                  </div>
+                </div>
+
+                <div class="path-step-card">
+                  <div class="step-num">02</div>
+                  <div class="step-info">
+                    <h5>Practical Lab Learning</h5>
+                    <p>Translating theoretical knowledge into working code through hands-on university coursework.</p>
+                  </div>
+                </div>
+
+                <div class="path-step-card">
+                  <div class="step-num">03</div>
+                  <div class="step-info">
+                    <h5>Engineering Mindset</h5>
+                    <p>Developing methodical problem-solving approaches, debugging habits, and clean code practices.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pre-structured Editable Template for when Naman is ready to add specific languages/tools -->
+            <div class="editable-placeholder-box skills-template-box">
+              <div class="placeholder-header">
+                <span class="placeholder-icon">✏️</span>
+                <span class="placeholder-label">Skill Slots (Ready to Customize)</span>
+              </div>
+              <p class="placeholder-hint">
+                As you learn programming languages and tools (such as C, C++, Python, Java, Data Structures, Web Development, Git, SQL), you can easily add them into this section in <code>index.html</code>.
+              </p>
+              <div class="future-skills-tags">
+                <span class="future-tag">[Skill 1 Placeholder]</span>
+                <span class="future-tag">[Skill 2 Placeholder]</span>
+                <span class="future-tag">[Skill 3 Placeholder]</span>
+                <span class="future-tag">[Skill 4 Placeholder]</span>
+                <span class="future-tag">[Skill 5 Placeholder]</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 5. PROJECTS SECTION -->
+    <!-- ========================================================= -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-tag">
+            <span class="tag-dot"></span>
+            <span>Practical Work</span>
+          </div>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">
+            Hands-on software development and engineering solutions.
+          </p>
+        </div>
+
+        <div class="projects-display-wrapper">
+          <!-- Honest Project State as requested: "Projects will be added as I build and complete them." -->
+          <div class="projects-in-progress-card">
+            <div class="blueprint-graphic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                <line x1="12" y1="11" x2="12" y2="17"></line>
+                <line x1="9" y1="14" x2="15" y2="14"></line>
+              </svg>
+            </div>
+
+            <div class="in-progress-badge">
+              <span class="pulse-amber"></span>
+              <span>In The Pipeline</span>
+            </div>
+
+            <h3 class="in-progress-title">Projects Showcase Coming Soon</h3>
+
+            <p class="in-progress-statement">
+              "Projects will be added as I build and complete them."
+            </p>
+
+            <p class="in-progress-details">
+              I am currently focusing on building my core programming and engineering knowledge. As I develop academic course projects, practical lab assignments, and personal software builds, they will be documented and showcased here with live demos, source code repositories, and technical overviews.
+            </p>
+
+            <!-- Pre-made Project Card Blueprint Template for easy copying -->
+            <div class="project-template-preview">
+              <div class="template-header">
+                <span class="template-badge">Project Card Template Ready</span>
+                <span class="template-note">Follow HTML comments in <code>index.html</code> to add your first project</span>
+              </div>
+              <div class="sample-wireframe-card">
+                <div class="wireframe-header">
+                  <div class="wireframe-title">[Your Project Title Here]</div>
+                  <div class="wireframe-tags">
+                    <span>[Tech 1]</span>
+                    <span>[Tech 2]</span>
+                    <span>[Tech 3]</span>
+                  </div>
+                </div>
+                <div class="wireframe-body">
+                  A concise description of the problem solved, architecture used, and key technical highlights.
+                </div>
+                <div class="wireframe-links">
+                  <span class="wireframe-link">GitHub Code &rarr;</span>
+                  <span class="wireframe-link">Live Demo &rarr;</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 6. CERTIFICATIONS & ACHIEVEMENTS SECTION -->
+    <!-- ========================================================= -->
+    <section id="certifications" class="section certs-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-tag">
+            <span class="tag-dot"></span>
+            <span>Milestones & Recognition</span>
+          </div>
+          <h2 class="section-title">Certifications & <span class="gradient-text">Achievements</span></h2>
+          <p class="section-subtitle">
+            Credentials, academic milestones, and professional honors.
+          </p>
+        </div>
+
+        <div class="certs-display-wrapper">
+          <!-- Honest Showcase according to user request -->
+          <div class="certs-card">
+            <div class="cert-icon-container">
+              <div class="medal-icon-circle">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+              </div>
+            </div>
+
+            <div class="cert-badge">
+              <span class="status-indicator-dot blue"></span>
+              <span>Milestone Tracker</span>
+            </div>
+
+            <h3 class="certs-title">Achievements In Progress</h3>
+
+            <p class="certs-statement">
+              "Certifications and achievements will be added as I earn them."
+            </p>
+
+            <p class="certs-subtext">
+              As I complete technical certifications, participate in hackathons, win coding contests, and receive academic honors during my B.Tech at JECRC University, each credential will be verified and displayed here.
+            </p>
+
+            <!-- Editable Placeholder Cards -->
+            <div class="future-milestones-grid">
+              <div class="milestone-placeholder-card">
+                <div class="milestone-icon">📜</div>
+                <div class="milestone-content">
+                  <h4>Technical Certifications</h4>
+                  <p class="placeholder-text">[Slot for NPTEL, Coursera, AWS, Google, or university certifications]</p>
+                </div>
+              </div>
+
+              <div class="milestone-placeholder-card">
+                <div class="milestone-icon">🏆</div>
+                <div class="milestone-content">
+                  <h4>Academic Achievements</h4>
+                  <p class="placeholder-text">[Slot for semester merit, college honors, or competitions]</p>
+                </div>
+              </div>
+
+              <div class="milestone-placeholder-card">
+                <div class="milestone-icon">🚀</div>
+                <div class="milestone-content">
+                  <h4>Hackathons & Events</h4>
+                  <p class="placeholder-text">[Slot for coding contests, hackathons, and workshop participation]</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 7. CAREER GOAL SECTION -->
+    <!-- ========================================================= -->
+    <section id="career-goal" class="section career-goal-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-tag">
+            <span class="tag-dot"></span>
+            <span>Vision & Mission</span>
+          </div>
+          <h2 class="section-title">My <span class="gradient-text">Career Goal</span></h2>
+          <p class="section-subtitle">
+            The core purpose and philosophy that guides my engineering journey.
+          </p>
+        </div>
+
+        <div class="goal-feature-card">
+          <div class="quote-symbol-bg" aria-hidden="true">“</div>
+
+          <div class="goal-highlight-box">
+            <div class="target-icon">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+            </div>
+            <h3 class="goal-quote">
+              "To become a good engineer by continuously learning, developing strong technical skills and gaining practical experience."
+            </h3>
+          </div>
+
+          <div class="goal-pillars-container">
+            <h4 class="pillars-heading">How I Am Working Towards This Goal:</h4>
+            
+            <div class="goal-pillars-row">
+              <div class="goal-pillar">
+                <div class="pillar-number">01</div>
+                <div class="pillar-text">
+                  <h5>Continuous Learning</h5>
+                  <p>Staying curious, actively absorbing computer science theory, and keeping pace with modern engineering advancements.</p>
+                </div>
+              </div>
+
+              <div class="goal-pillar">
+                <div class="pillar-number">02</div>
+                <div class="pillar-text">
+                  <h5>Strong Technical Skills</h5>
+                  <p>Building rigorous fluency in algorithms, core programming languages, systems design, and problem solving.</p>
+                </div>
+              </div>
+
+              <div class="goal-pillar">
+                <div class="pillar-number">03</div>
+                <div class="pillar-text">
+                  <h5>Practical Experience</h5>
+                  <p>Applying knowledge to real projects, hands-on lab experiments, and collaborative software engineering tasks.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="goal-signature">
+            <span class="signature-name">Naman Jain</span>
+            <span class="signature-title">B.Tech Computer Science • JECRC University</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 8. CONTACT SECTION -->
+    <!-- ========================================================= -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-tag">
+            <span class="tag-dot"></span>
+            <span>Get In Touch</span>
+          </div>
+          <h2 class="section-title">Connect With <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">
+            Feel free to reach out for academic discussions, collaborative opportunities, or engineering mentorship.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Details / Placeholder Handles -->
+          <div class="contact-info-column">
+            
+            <div class="contact-info-card">
+              <h3 class="contact-card-title">Contact Information</h3>
+              <p class="contact-card-desc">
+                Below are placeholders for my contact channels. You can easily update these in <code>index.html</code> with your actual contact information.
+              </p>
+
+              <div class="contact-details-list">
+                
+                <!-- Email Placeholder Item -->
+                <div class="contact-item">
+                  <div class="contact-item-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div class="contact-item-content">
+                    <span class="item-label">Email Address</span>
+                    <!-- EDITABLE: Replace the href and text below with your actual email (e.g. namanjain@example.com) -->
+                    <a href="mailto:your.email@example.com" class="item-link" id="emailPlaceholder">
+                      your.email@example.com
+                    </a>
+                  </div>
+                  <button class="copy-btn" data-copy="your.email@example.com" title="Copy email address" aria-label="Copy email">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                  </button>
+                </div>
+
+                <!-- Phone Number Placeholder Item -->
+                <div class="contact-item">
+                  <div class="contact-item-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                  </div>
+                  <div class="contact-item-content">
+                    <span class="item-label">Phone Number</span>
+                    <!-- EDITABLE: Replace below with your actual phone number -->
+                    <span class="item-link" id="phonePlaceholder">+91 XXXXX XXXXX</span>
+                  </div>
+                </div>
+
+                <!-- LinkedIn Placeholder Item -->
+                <div class="contact-item">
+                  <div class="contact-item-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                      <rect x="2" y="9" width="4" height="12"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                  </div>
+                  <div class="contact-item-content">
+                    <span class="item-label">LinkedIn Profile</span>
+                    <!-- EDITABLE: Replace href and text with your LinkedIn profile link -->
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="item-link">
+                      linkedin.com/in/yourusername
+                    </a>
+                  </div>
+                  <span class="external-icon">&nearr;</span>
+                </div>
+
+                <!-- GitHub Placeholder Item -->
+                <div class="contact-item">
+                  <div class="contact-item-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </div>
+                  <div class="contact-item-content">
+                    <span class="item-label">GitHub Profile</span>
+                    <!-- EDITABLE: Replace href and text with your GitHub profile link -->
+                    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="item-link">
+                      github.com/yourusername
+                    </a>
+                  </div>
+                  <span class="external-icon">&nearr;</span>
+                </div>
+
+                <!-- Location Item -->
+                <div class="contact-item">
+                  <div class="contact-item-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="contact-item-content">
+                    <span class="item-label">Location</span>
+                    <span class="item-link-plain">Jaipur, Rajasthan, India</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Working Interactive Contact Form -->
+          <div class="contact-form-column">
+            <div class="contact-form-card">
+              <h3 class="contact-card-title">Send A Message</h3>
+              <p class="contact-card-desc">
+                Have a question or opportunity? Leave a note and I will get back to you.
+              </p>
+
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="senderName" class="form-label">Your Name <span class="required-star">*</span></label>
+                  <input type="text" id="senderName" name="name" class="form-input" placeholder="e.g. Alex Sharma" required />
+                  <span class="form-error-msg" id="nameError">Please enter your name</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderEmail" class="form-label">Your Email <span class="required-star">*</span></label>
+                  <input type="email" id="senderEmail" name="email" class="form-input" placeholder="e.g. alex@example.com" required />
+                  <span class="form-error-msg" id="emailError">Please enter a valid email address</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderSubject" class="form-label">Subject</label>
+                  <input type="text" id="senderSubject" name="subject" class="form-input" placeholder="e.g. Academic Discussion / Project" />
+                </div>
+
+                <div class="form-group">
+                  <label for="senderMessage" class="form-label">Message <span class="required-star">*</span></label>
+                  <textarea id="senderMessage" name="message" class="form-textarea" rows="4" placeholder="Write your message here..." required></textarea>
+                  <span class="form-error-msg" id="messageError">Please enter your message</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                  <span>Send Message</span>
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+
+                <div class="form-notification" id="formNotification" role="alert" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================= -->
+  <!-- FOOTER -->
+  <!-- ========================================================= -->
+  <footer class="footer">
+    <div class="container footer-container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">
+            <span class="logo-badge">NJ</span>
+            <span class="logo-text">Naman Jain</span>
+          </a>
+          <p class="footer-tagline">
+            B.Tech Computer Science student at JECRC University, Jaipur.<br />
+            Passionate about learning and becoming a good engineer.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#career-goal">Career Goal</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="currentYear">2026</span> <strong>Naman Jain</strong>. All rights reserved.
+        </p>
+        <p class="build-info">
+          Crafted with clean code & modern web standards.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container for interactive actions (e.g. Copying Email) -->
+  <div id="toastNotification" class="toast-notification" aria-live="polite"></div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to top" title="Scroll to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
